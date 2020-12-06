@@ -155,6 +155,9 @@ class RoundedLoadingButtonState extends State<RoundedLoadingButton>
             child: childStream,
             color: widget.color,
             elevation: widget.elevation,
+            hoverElevation: widget.elevation,
+            focusElevation: widget.elevation,
+            highlightElevation: widget.elevation,
             onPressed: widget.onPressed == null ? null : _btnPressed));
 
     return Container(
